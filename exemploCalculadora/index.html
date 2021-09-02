@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Calculadora</title> 
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+      <link rel="shortcut icon" href="img/calculadora.png">
+   </head>
+   <body>
+      <script type="text/javascript" src="JavaScript.js"> </script>
+
+     
+
+           <form name="calcform" method="post" action="">
+
+      
+         <fieldset>
+            <legend> Calculadora </legend>
+       
+            <label for="valor1">Digite um valor:</label>
+            <input type="text" name="valor1" id="valor1" />
+ 
+            <label for="valor2">Digite outro valor:</label>
+            <input type="text" name="valor2" id="valor2" />
+ 
+            <div label for="oper">Selecione a operação desejada: </div>
+            <select name="oper" id="oper">
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="multiplicacao">Multiplifcação</option>
+            <option value="divisao">Divisão</option>
+            </select>
+ 
+            <label for="res">Resultado:</label>
+            <input type="text" name="res" id="res" />
+
+         </fieldset>
+         <fieldset>
+            <input type="button" value="Calcular" class="botao" onClick="calcular(document.calcform.oper.value)"/>
+         </fieldset>
+      </form>
+
+   </body>
+</html>
